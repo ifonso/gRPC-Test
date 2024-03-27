@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package background;
+
+message SendBackgroundRequest {
+    string id = 1;
+    string name = 2;
+}
+
+message SendBackgroundResponse {
+    bool success = 1;
+}
+
+service BackgroundService {
+    rpc SendBackground(SendBackgroundRequest) returns (SendBackgroundResponse);
+}

@@ -1,0 +1,27 @@
+{
+  "name": "grpc-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "ts-node ./src/main.ts",
+    "client": "ts-node ./client/main.ts"
+  },
+  "engines": {
+    "node": "21.x.x"
+  },
+  "author": "ifonso",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "ts-proto": "^1.170.0",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.4",
+    "@grpc/proto-loader": "^0.7.11",
+    "@grpc/reflection": "^1.0.3",
+    "reflect-metadata": "^0.2.1"
+  }
+}
